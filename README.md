@@ -32,3 +32,4 @@ There are 10 independent variables (including id):
 `python src/pipelines/training_pipeline.py`
 * Step:5-
 `python application.py`
+
