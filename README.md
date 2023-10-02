@@ -20,6 +20,15 @@ There are 10 independent variables (including id):
 * price: Price of the given Diamond.
 * Dataset Source Link : https://www.kaggle.com/competitions/playground-series-s3e8/data?select=train.csv
 
-Command to run demo.py file:
-
-`python demo.py`
+# Command in terminal to run this project:
+* step:1-
+`conde create -p venv python==3.8`
+* Step:2-
+`conde activate venv/`
+* step:3-
+`python setup.py install`
+* Step:4-
+(Optional)
+`python src/pipelines/training_pipeline.py`
+* Step:5-
+`python application.py`
