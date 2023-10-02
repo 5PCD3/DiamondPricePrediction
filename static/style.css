@@ -1,0 +1,51 @@
+/* Apply styles to the container */
+.login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left; /* Adjust text alignment */
+}
+
+/* Style the heading */
+.login h1 {
+    text-align: center;
+    color: #0074cc; /* Change the heading color */
+}
+
+/* Style the form elements and labels */
+.login label {
+    font-weight: bold;
+}
+
+.login input[type="text"],
+.login select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the Predict button */
+.login button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}
+
+/* Style the result heading */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}

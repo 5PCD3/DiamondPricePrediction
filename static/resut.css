@@ -1,0 +1,31 @@
+/* Apply styles to the container */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Style the heading */
+h1 {
+    text-align: center;
+    color: #0074cc;
+}
+
+/* Style the predicted price */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0074cc;
+}
+
+/* Add more custom styles as needed */
