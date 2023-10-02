@@ -19,6 +19,7 @@ There are 10 independent variables (including id):
 
 * price: Price of the given Diamond.
 * Dataset Source Link : https://www.kaggle.com/competitions/playground-series-s3e8/data?select=train.csv
+* You can check out "https://www.americangemsociety.org/ags-diamond-grading-system/" ,to get domain knowledge about Diamonds for better understanding of this project.
 
 # Command in terminal to run this project:
 * step:1-
