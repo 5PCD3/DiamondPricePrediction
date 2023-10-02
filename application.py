@@ -15,9 +15,9 @@ def predict_datapoint():
                 x=float(request.form.get("x")),
                 y=float(request.form.get("y")),
                 z=float(request.form.get("z")),
-                cut=float(request.form.get("cut")),
-                colour=float(request.form.get("colour")),
-                clarity=float(request.form.get("clarity")),
+                cut=request.form.get("cut"),
+                color=request.form.get("color"),  # Fix the field name
+                clarity=request.form.get("clarity"),
                 # price=float(request.form.get("price"))
             )
             final_new_data = data.get_data_as_dataframe()

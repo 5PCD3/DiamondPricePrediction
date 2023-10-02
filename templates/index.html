@@ -1,34 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond Price Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-    
 <body>
-    <div class = "login">
-        <h1>Diamond Price Prediction</h1>
+    <div class="glass-bg">
+        <div class="login">
+            <h1>Diamond Price Prediction</h1>
 
-        <!--Main input for reciving quary to our ML-->
-        
-        <form action="{{ url_for('predict_datapoint') }}" method="post">
-            <label for="carat">carat         :</label>
+            <!--Main input for receiving query to our ML-->
+            <form action="{{ url_for('predict_datapoint') }}" method="post">
+                <label for="carat">Carat:</label>
+                <input type="text" name="carat" placeholder="Carat" required="required" /><br>
 
-            <input type= "text" name="carat" placeholder= "carat" required="required"   /><br>
-                <label for="depth">depth:</label>
+                <label for="depth">Depth:</label>
+                <input type="text" name="depth" placeholder="Depth" required="required" /><br>
 
-                <input type= "text" name="depth" placeholder= "depth" required="required" /><br>
-                <label for="table">table  :</label>
+                <label for="table">Table:</label>
+                <input type="text" name="table" placeholder="Table" required="required" /><br>
 
-                <input type= "text" name="table" placeholder= "table" required="required" /><br>
-                <label for="x">x           :</label> 
-                                                         
-                <input type= "text" name="x" placeholder= "x" required="required" /><br>
-                <label for="y">y           :</label> 
-                                                         
-                <input type= "text" name="y" placeholder= "y" required="required" /><br>
-                <label for="z">z          :</label> 
-                                                         
-                <input type= "text" name="z" placeholder= "z" required="required" /><br>
+                <label for="x">X:</label>
+                <input type="text" name="x" placeholder="X" required="required" /><br>
+
+                <label for="y">Y:</label>
+                <input type="text" name="y" placeholder="Y" required="required" /><br>
+
+                <label for="z">Z:</label>
+                <input type="text" name="z" placeholder="Z" required="required" /><br>
 
                 <label for="cut">Cut:</label>
                 <select name="cut" required>
@@ -48,7 +49,6 @@
                     <option value="H">H</option>
                     <option value="I">I</option>
                     <option value="J">J</option>
-
                 </select><br>
 
                 <label for="clarity">Clarity:</label>
@@ -62,10 +62,14 @@
                     <option value="VVS1">VVS1</option>
                     <option value="IF">IF</option>
                 </select><br>
-                
 
-                <button type="submit" class="btn btn-primary btn-block btn-large ">Predict</button>
-        </form>
-    <h2>    
-        THE Predicted Diamond Price is {{result}}
-    </h2>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+
+            <h2>
+                THE Predicted Diamond Price is {{result}}
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

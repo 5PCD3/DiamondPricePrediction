@@ -1,51 +1,75 @@
-/* Apply styles to the container */
+/* Reset some default styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/340/215/687/3d-4k-hd-desktop-wallpaper-8dad896c6d1c78ae92b724bee6dbf765.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark and transparent background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Center the diamond image */
+.diamond-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjust the width as needed */
+}
+
+/* Style the container */
+.login-container {
+    position: relative;
+}
+
 .login {
+    background-color: rgba(255, 255, 255, 0.2); /* Light and transparent background color */
+    backdrop-filter: blur(10px);
     max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    text-align: left; /* Adjust text alignment */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the heading */
-.login h1 {
-    text-align: center;
-    color: #0074cc; /* Change the heading color */
+/* Style the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-/* Style the form elements and labels */
-.login label {
+label {
     font-weight: bold;
+    color: C2EBEF;
 }
 
-.login input[type="text"],
-.login select {
+input[type="text"],
+select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 1px solid rgb(110, 6, 77);
+    border-radius: 5px;
+    outline: none;
 }
 
-/* Style the Predict button */
-.login button {
-    background-color: #0074cc;
-    color: #fff;
-    border: none;
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #7f1f8d;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
-    border-radius: 3px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.login button:hover {
-    background-color: #0056b3; /* Change button color on hover */
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-/* Style the result heading */
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
-}
+/* Rest of your CSS styles... */
